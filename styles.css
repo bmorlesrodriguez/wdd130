@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+}
+
+nav a {
+    color: rgb(230, 138, 47);
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(170, 14, 108);
+    display: block;
+    padding: 20px;
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(000/0.2); /*1️⃣*/
+    padding: 1rem;
+    background-color: #e7cd38;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    ...
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
