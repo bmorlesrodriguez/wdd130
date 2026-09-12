@@ -2,25 +2,38 @@ body {
     background-color: antiquewhite;
 }
 
-nav a {
-    color: rgb(230, 138, 47);
+h1 {
+    color: rgb(170, 14, 108);
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(170, 14, 108);
     padding: 10px;
 }
 
 nav a {
-    color: rgb(170, 14, 108);
+    color: antiquewhite;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 main {
     max-width: 840px;
 }
 
+main img {
+    width: 200px;
+    height: auto;
+    border: 3px solid rgb(170, 14, 108);
+    padding: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(000/0.2); /*1️⃣*/
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #e7cd38;
     color: #0f0f0f;
@@ -30,12 +43,6 @@ aside {
 aside img{
     width: 200px;
     height: auto;
-}
-
-main img {
-    width: 200px;
-    height: auto;
-    ...
 }
 
 p {
