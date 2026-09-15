@@ -1,3 +1,10 @@
+/* Resetar CSS do meu projeto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color: antiquewhite;
 }
@@ -18,6 +25,10 @@ nav a {
     padding: 10px;
 }
 
+h1 {
+    color:indianred;
+}
+
 main {
     max-width: 840px;
 }
@@ -25,9 +36,14 @@ main {
 main img {
     width: 200px;
     height: auto;
-    border: 3px solid rgb(170, 14, 108);
+    border: 3px indianred rgb(180, 157, 185);
     padding: 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    float: right;
+}
+
+p {
+  padding: 0;
 }
 
 aside {
@@ -40,17 +56,36 @@ aside {
     text-align: center;
 }
 
-aside img{
+aside img {
     width: 200px;
     height: auto;
 }
-
-p {
-  padding: 0;
+aside {
+  width: 20em;
+  text-align: center;
+}
+aside h2 {
+  position: absolute;
+  position: relative;
+  top: 50px;
+  left: 120ps;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+.identacao {
+    padding-left: 2rem;
 }
