@@ -1,0 +1,175 @@
+/* ===== Variáveis (esquema de cores e fontes) ===== */
+:root {
+  --cor-primaria: #0b6e79;   /* azul-petróleo (cor da água) */
+  --cor-secundaria: #e8f4f2; /* azul-gelo claro */
+  --cor-destaque1: #12303a;  /* azul-escuro acinzentado */
+  --cor-destaque2: #f2a900;  /* amarelo-bote */
+  --fonte-titulo: "Times New Roman", "Georgia", serif;
+  --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Reset do box-model ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Texto base ===== */
+body {
+  font-family: var(--fonte-body);
+  color: var(--cor-destaque1);
+  line-height: 1.5;
+}
+
+/* ===== Largura da página e centralização ===== */
+header, main, footer {
+  width: 840px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== Títulos ===== */
+h1, h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+/* ===== Espaçamentos básicos ===== */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* ===== Cabeçalho: logotipo + navegação ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: block;
+  height: 110px;
+  width: auto;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+header nav a {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 4px;
+  border-bottom: 3px solid transparent;
+}
+
+header nav a:hover,
+header nav a:focus {
+  border-bottom-color: var(--cor-destaque2);
+}
+
+/* ===== Seções de conteúdo ===== */
+section h2 {
+  margin-bottom: 8px;
+}
+
+section p {
+  margin: 0;
+  padding: 8px 0;
+  text-align: justify;
+}
+
+/* ===== Hero com sobreposição ===== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(18, 48, 58, 0.75); /* --cor-destaque1 com transparência */
+  color: #fff; /* texto branco: contraste alto com o fundo escuro */
+}
+
+.hero article {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  margin: 24px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque1);
+  border: 3px solid var(--cor-destaque2);
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 0 0 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero article p {
+  margin: 0;
+  padding: 8px;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background-color: var(--cor-destaque1);
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  margin-top: 32px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
+
+.redes-sociais img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+/* ===== Telas pequenas ===== */
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    position: static;
+    font-size: 1.5rem;
+  }
+
+  .hero article {
+    position: static;
+    width: auto;
+    margin: 16px;
+  }
+}
