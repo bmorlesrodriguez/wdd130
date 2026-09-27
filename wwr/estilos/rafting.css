@@ -107,8 +107,8 @@ section p {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(18, 48, 58, 0.75); /* --cor-destaque1 com transparência */
-  color: #fff; /* texto branco: contraste alto com o fundo escuro */
+  background-color: rgba(11, 110, 121, 0.75); 
+  color: #fff; 
 }
 
 .hero article {
