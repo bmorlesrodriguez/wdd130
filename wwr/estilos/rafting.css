@@ -47,12 +47,12 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* ===== Cabeçalho: logotipo + navegação ===== */
+/* ===== Cabeçalho: logotipo + navegação (CSS Grid) ===== */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .logo {
@@ -63,6 +63,8 @@ header {
 
 header nav {
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -107,8 +109,8 @@ section p {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(11, 110, 121, 0.75); 
-  color: #fff; 
+  background-color: var(--cor-primaria);
+  color: #fff;
 }
 
 .hero article {
@@ -169,16 +171,20 @@ section p {
 
 /* ===== Rodapé ===== */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
   background-color: var(--cor-destaque1);
   color: #fff;
-  text-align: center;
-  padding: 8px;
+  padding: 16px;
   margin-top: 32px;
 }
 
 .socialmedia {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 16px;
 }
 
@@ -195,6 +201,20 @@ footer {
 /* ===== Telas pequenas ===== */
 @media (max-width: 700px) {
   header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socialmedia {
     justify-content: center;
   }
 
