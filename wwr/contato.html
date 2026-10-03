@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a Rush River: encontre nosso endereço, telefones e e-mail, conheça a equipe e envie sua dúvida, reserva ou sugestão sobre passeios de rafting.">
+  <meta name="author" content="Beatriz Morles">
+  <title>Fale Conosco | Rush River</title>
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="imagens/expedicioes_emocionantes.png" alt="Logotipo da Expedições Emocionantes: nome da empresa com um remo e ondas azuis" class="logo">
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fale Conosco</h1>
+
+    <section>
+      <h2>Como chegar e falar com a gente</h2>
+      <div class="contato-info">
+        <address>
+          <h3>Endereço</h3>
+          <p>Av. do Rio Claro, 450<br>Bonito, MS, 79290-000</p>
+          <h3>Telefones</h3>
+          <p>
+            <a href="tel:+556733334444">(67) 3333-4444</a><br>
+            <a href="tel:+5567999995555">(67) 99999-5555</a> (WhatsApp)
+          </p>
+          <h3>E-mail</h3>
+          <p><a href="mailto:contato@rushriver.com.br">contato@rushriver.com.br</a></p>
+        </address>
+        <iframe
+          src="https://www.google.com/maps?q=Av.+do+Rio+Claro,+450,+Bonito,+MS&amp;output=embed"
+          title="Mapa com a localização da Rush River"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nossa equipe</h2>
+      <div class="equipe">
+        <figure>
+          <img src="imagens/equipe1.jpg" alt="Retrato de Carlos Mendes, sorrindo e usando colete salva-vidas">
+          <figcaption>Carlos Mendes <span>Guia-chefe</span></figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/equipe2.jpg" alt="Retrato de Marina Souza, com capacete e remo na mão">
+          <figcaption>Marina Souza <span>Instrutora de segurança</span></figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/equipe3.jpg" alt="Retrato de Rafael Lima ao lado de um bote">
+          <figcaption>Rafael Lima <span>Atendimento e reservas</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Envie sua mensagem</h2>
+      <form class="formulario" action="#" method="post">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <fieldset>
+          <legend>Finalidade da mensagem</legend>
+          <label><input type="radio" name="finalidade" value="consulta-geral" checked> Consulta Geral</label>
+          <label><input type="radio" name="finalidade" value="pergunta-reserva"> Pergunta sobre Reserva</label>
+          <label><input type="radio" name="finalidade" value="sugestao-site"> Sugestão de Site</label>
+        </fieldset>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+        </div>
+
+        <label class="newsletter">
+          <input type="checkbox" name="newsletter" value="sim"> Quero receber a newsletter mensal
+        </label>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rush River &ndash; Beatriz Morles</p>
+    <nav class="socialmedia" aria-label="Redes sociais">
+      <a href="https://facebook.com">
+        <img src="imagens/facebook_icone.svg" alt="Ícone do Facebook">
+      </a>
+      <a href="https://linkedin.com">
+        <img src="imagens/linkedin_icone.svg" alt="Ícone do LinkedIn">
+      </a>
+      <a href="https://instagram.com">
+        <img src="imagens/instagram_icone.png" alt="Ícone do Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
