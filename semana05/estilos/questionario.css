@@ -1,0 +1,112 @@
+:root {
+    --verde-escuro: #14532d;
+    --verde: #1f7a45;
+    --verde-claro: #e8f3ec;
+    --dourado: #c9a227;
+    --dourado-escuro: #a07d12;
+    --branco: #ffffff;
+    --texto: #12301f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px 40px;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--branco);
+    color: var(--texto);
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: var(--verde-escuro);
+    font-size: 2rem;
+}
+
+form {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px 32px 28px;
+    background-color: var(--verde-claro);
+    border: 2px solid var(--dourado);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(20, 83, 45, 0.15);
+}
+
+.pergunta {
+    margin-top: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--verde-escuro);
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--texto);
+    background-color: var(--branco);
+    border: 2px solid #cdd8d1;
+    border-radius: 6px;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+pre {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    padding: 10px 10px;
+    overflow-x: auto;
+    background-color: var(--verde-escuro);
+    border-left: 4px solid var(--dourado);
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--dourado);
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--branco);
+    background-color: var(--verde);
+    border: 2px solid var(--dourado);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: var(--dourado);
+    color: var(--verde-escuro);
+}
