@@ -27,9 +27,9 @@
     <section>
       <h2>Como chegar e falar com a gente</h2>
       <div class="contato-info">
-        <address>
+        <div class="contato-dados">
           <h3>Endereço</h3>
-          <p>Av. do Rio Claro, 450<br>Bonito, MS, 79290-000</p>
+          <address>Av. do Rio Claro, 450<br>Bonito, MS, 79290-000</address>
           <h3>Telefones</h3>
           <p>
             <a href="tel:+556733334444">(67) 3333-4444</a><br>
@@ -37,7 +37,7 @@
           </p>
           <h3>E-mail</h3>
           <p><a href="mailto:contato@rushriver.com.br">contato@rushriver.com.br</a></p>
-        </address>
+        </div>
         <iframe
           src="https://www.google.com/maps?q=Av.+do+Rio+Claro,+450,+Bonito,+MS&amp;output=embed"
           title="Mapa com a localização da Rush River"
@@ -80,9 +80,18 @@
 
         <fieldset>
           <legend>Finalidade da mensagem</legend>
-          <label><input type="radio" name="finalidade" value="consulta-geral" checked> Consulta Geral</label>
-          <label><input type="radio" name="finalidade" value="pergunta-reserva"> Pergunta sobre Reserva</label>
-          <label><input type="radio" name="finalidade" value="sugestao-site"> Sugestão de Site</label>
+          <div class="opcao">
+            <input type="radio" id="consulta-geral" name="finalidade" value="consulta-geral" checked>
+            <label for="consulta-geral">Consulta Geral</label>
+          </div>
+          <div class="opcao">
+            <input type="radio" id="pergunta-reserva" name="finalidade" value="pergunta-reserva">
+            <label for="pergunta-reserva">Pergunta sobre Reserva</label>
+          </div>
+          <div class="opcao">
+            <input type="radio" id="sugestao-site" name="finalidade" value="sugestao-site">
+            <label for="sugestao-site">Sugestão de Site</label>
+          </div>
         </fieldset>
 
         <div>
@@ -90,9 +99,10 @@
           <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
         </div>
 
-        <label class="newsletter">
-          <input type="checkbox" name="newsletter" value="sim"> Quero receber a newsletter mensal
-        </label>
+        <div class="opcao">
+          <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+          <label for="newsletter">Quero receber a newsletter mensal</label>
+        </div>
 
         <button type="submit">Enviar mensagem</button>
       </form>
@@ -101,7 +111,7 @@
 
   <footer>
     <p>&copy; 2026 Rush River &ndash; Beatriz Morles</p>
-    <nav class="socialmedia" aria-label="Redes sociais">
+    <nav class="redes-sociais" aria-label="Redes sociais">
       <a href="https://facebook.com">
         <img src="imagens/facebook_icone.svg" alt="Ícone do Facebook">
       </a>
@@ -115,4 +125,3 @@
   </footer>
 </body>
 </html>
-

@@ -250,10 +250,15 @@ section p {
   padding: 8px 16px 12px;
 }
 
-.formulario fieldset label {
-  display: block;
-  font-weight: normal;
+.formulario .opcao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 4px 0;
+}
+
+.formulario .opcao label {
+  font-weight: normal;
 }
 
 .formulario input[type="text"],
@@ -274,10 +279,6 @@ section p {
 .formulario button:focus-visible {
   outline: 3px solid var(--cor-destaque2);
   outline-offset: 2px;
-}
-
-.formulario .newsletter {
-  font-weight: normal;
 }
 
 .formulario button[type="submit"] {
@@ -309,17 +310,17 @@ footer {
   margin-top: 32px;
 }
 
-.socialmedia {
+.redes-sociais {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
 }
 
-.socialmedia a {
+.redes-sociais a {
   text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
   display: block;
   width: 32px;
   height: 32px;
@@ -341,7 +342,7 @@ footer {
     text-align: center;
   }
 
-  .socialmedia {
+  .redes-sociais {
     justify-content: center;
   }
 
