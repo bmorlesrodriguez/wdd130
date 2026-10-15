@@ -1,13 +1,3 @@
-/* ===== Variáveis (esquema de cores e fontes) ===== */
-:root {
-  --cor-primaria: #0b6e79;   /* azul-petróleo (cor da água) */
-  --cor-secundaria: #e8f4f2; /* azul-gelo claro */
-  --cor-destaque1: #12303a;  /* azul-escuro acinzentado */
-  --cor-destaque2: #f2a900;  /* amarelo-bote */
-  --fonte-titulo: "Times New Roman", "Georgia", serif;
-  --fonte-body: Arial, Helvetica, sans-serif;
-}
-
 /* ===== Reset do box-model ===== */
 * {
   margin: 0;
@@ -28,7 +18,6 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
@@ -36,8 +25,8 @@
 /* ===== Texto base ===== */
 body {
   overflow-x: hidden;
-  font-family: var(--fonte-body);
-  color: var(--cor-destaque1);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #12303a;
   line-height: 1.5;
 }
 
@@ -50,8 +39,8 @@ header, main, footer {
 
 /* ===== Títulos ===== */
 h1, h2 {
-  font-family: var(--fonte-titulo);
-  color: var(--cor-primaria);
+  font-family: "Times New Roman", "Georgia", serif;
+  color: #0b6e79;
   text-align: center;
 }
 
@@ -83,7 +72,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--cor-primaria);
+  color: #0b6e79;
   font-weight: bold;
   text-decoration: none;
   padding: 8px 4px;
@@ -92,7 +81,7 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-  border-bottom-color: var(--cor-destaque2);
+  border-bottom-color: #f2a900;
 }
 
 /* ===== Seções de conteúdo ===== */
@@ -123,7 +112,7 @@ section p {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--cor-primaria);
+  background-color: #0b6e79;
   color: #fff;
 }
 
@@ -133,9 +122,9 @@ section p {
   right: 0;
   width: 55%;
   margin: 24px;
-  background-color: var(--cor-secundaria);
-  color: var(--cor-destaque1);
-  border: 3px solid var(--cor-destaque2);
+  background-color: #e8f4f2;
+  color: #12303a;
+  border: 3px solid #f2a900;
   border-radius: 8px;
 }
 
@@ -184,7 +173,7 @@ section p {
 .equipe figcaption {
   margin-top: 8px;
   font-weight: bold;
-  color: var(--cor-destaque1);
+  color: #12303a;
 }
 
 /* ===== Fale Conosco: dados da empresa + mapa ===== */
@@ -201,13 +190,13 @@ section p {
 }
 
 .contato-info h3 {
-  color: var(--cor-primaria);
+  color: #0b6e79;
   margin-top: 8px;
 }
 
 .contato-info a,
 .formulario a {
-  color: var(--cor-primaria);
+  color: #0b6e79;
 }
 
 .contato-info iframe {
@@ -235,8 +224,8 @@ section p {
   gap: 16px;
   margin: 16px;
   padding: 16px;
-  background-color: var(--cor-secundaria);
-  border: 3px solid var(--cor-destaque2);
+  background-color: #e8f4f2;
+  border: 3px solid #f2a900;
   border-radius: 8px;
 }
 
@@ -246,7 +235,7 @@ section p {
 }
 
 .formulario fieldset {
-  border: 1px solid var(--cor-primaria);
+  border: 1px solid #0b6e79;
   border-radius: 6px;
   padding: 8px 16px 12px;
 }
@@ -270,15 +259,15 @@ section p {
   margin-top: 4px;
   padding: 8px;
   font: inherit;
-  color: var(--cor-destaque1);
-  border: 1px solid var(--cor-primaria);
+  color: #12303a;
+  border: 1px solid #0b6e79;
   border-radius: 6px;
 }
 
 .formulario input:focus,
 .formulario textarea:focus,
 .formulario button:focus {
-  outline: 3px solid var(--cor-destaque2);
+  outline: 3px solid #f2a900;
   outline-offset: 2px;
 }
 
@@ -288,14 +277,14 @@ section p {
   font: inherit;
   font-weight: bold;
   color: #fff;
-  background-color: var(--cor-primaria);
-  border: 3px solid var(--cor-destaque2);
+  background-color: #0b6e79;
+  border: 3px solid #f2a900;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .formulario button[type="submit"]:hover {
-  background-color: var(--cor-destaque1);
+  background-color: #12303a;
 }
 
 /* ===== Rodapé ===== */
@@ -305,7 +294,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
-  background-color: var(--cor-destaque1);
+  background-color: #12303a;
   color: #fff;
   padding: 16px;
   margin-top: 32px;
@@ -663,7 +652,7 @@ footer {
 .cartao-valor.destaque {
   color: #fff;
   background-color: #4a4e3f;
-  border-color: #4a4e3f;
+  border-color: #6b705c;
 }
  
 .cartao-valor.destaque h3 {
@@ -822,7 +811,7 @@ footer {
 }
  
 .passeios-destaque h2 {
-  color: var(--cor-destaque1);
+  color: #12303a;
 }
  
 .destaque-texto {
@@ -1391,7 +1380,6 @@ img[loading="lazy"] {
   }
  
   * {
-    animation: none !important;
     box-shadow: none !important;
   }
 }
